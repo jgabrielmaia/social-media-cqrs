@@ -1,4 +1,4 @@
-using CQRS.Core.Messages;
+using CQRS.Core.Commands;
 
 namespace Post.Cmd.Api.Commands;
 
