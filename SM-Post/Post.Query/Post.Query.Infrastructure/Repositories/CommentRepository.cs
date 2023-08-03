@@ -3,7 +3,7 @@ using Post.Query.Domain.Entities;
 using Post.Query.Domain.Repositories;
 using Post.Query.Infrastructure.Data;
 
-namespace comment.Query.Infrastructure.Repositories;
+namespace Post.Query.Infrastructure.Repositories;
 
 public class CommentRepository : ICommentRepository
 {
