@@ -13,9 +13,9 @@ public class DatabaseContextFactory
 
     public DatabaseContext CreateDbContext()
     {
-        DbContextOptionsBuilder<DatabaseContext> optionsBuilder = new();
-        _configureDbContext(optionsBuilder);
+        DbContextOptionsBuilder<DatabaseContext> options = new();
+        _configureDbContext(options);
 
-        return new DatabaseContext(optionsBuilder.Options);
+        return new DatabaseContext(options.Options);
     }
 }

@@ -37,9 +37,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/SM-Post/Post.Cmd/Post.Query.Api/bin/Debug/net7.0/Post.Query.Api.dll",
+            "program": "${workspaceFolder}/SM-Post/Post.Query/Post.Query.Api/bin/Debug/net7.0/Post.Query.Api.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/SM-Post/Post.Cmd/Post.Query.Api",
+            "cwd": "${workspaceFolder}/SM-Post/Post.Query/Post.Query.Api",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
