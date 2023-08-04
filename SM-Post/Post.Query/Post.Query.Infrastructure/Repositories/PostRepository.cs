@@ -79,7 +79,7 @@ public class PostRepository : IPostRepository
         using DatabaseContext context = _contextFactory.CreateDbContext();
 
         return await context.Posts.AsNoTracking()
-            .Include(post => post.Likes).AsNoTracking()
+            .Include(post => post.Comments).AsNoTracking()
             .Where(post => post.Likes >= numberOfLikes)
             .ToListAsync();
     }
