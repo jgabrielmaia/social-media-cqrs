@@ -45,7 +45,7 @@ public class PostRepository : IPostRepository
             .FirstOrDefaultAsync(post => post.PostId == postId);
     }
 
-    public async Task<List<PostEntity>> ListAllAsync(Guid postId)
+    public async Task<List<PostEntity>> ListAllAsync()
     {
         using DatabaseContext context = _contextFactory.CreateDbContext();
 
@@ -64,7 +64,7 @@ public class PostRepository : IPostRepository
             .ToListAsync();
     }
 
-    public async Task<List<PostEntity>> ListWithCommentsAsync(Guid postId)
+    public async Task<List<PostEntity>> ListWithCommentsAsync()
     {
         using DatabaseContext context = _contextFactory.CreateDbContext();
 
